@@ -1,7 +1,8 @@
 from jose import jwe
 import jwt
 import time
-from app import Config, logger
+from app.config import Config
+from app_logging import logger
 from fastapi import Request
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer

@@ -20,7 +20,7 @@ middlewares = [
                )
 ]
 
-AMS = FastAPI(debug=True if Config.ENVIRONMENT in ["LOCAL"] else False, middleware=middlewares)
+AMS = FastAPI(debug=True, middleware=middlewares)
      
 AMS.include_router(attendance_log_router)
 AMS.include_router(course_router)
